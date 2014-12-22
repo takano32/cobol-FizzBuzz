@@ -10,23 +10,24 @@
        PROCEDURE DIVISION.
        FIZZ-BUZZ-MAIN SECTION.
            PERFORM 100 TIMES
-                   IF FZ = 3
-                        THEN IF BZ = 5
-                           THEN DISPLAY "FizzBuzz"
-                           COMPUTE BZ = 0
-                           ELSE DISPLAY "Fizz"
-                           END-IF
-                           COMPUTE FZ = 0
-                        ELSE IF BZ = 5
-                        THEN DISPLAY "Buzz"
-                                COMPUTE BZ = 0
-                        ELSE
-                                DISPLAY CT
-                        END-IF
+               IF FZ = 3 THEN
+                   IF BZ = 5 THEN
+                       DISPLAY "FizzBuzz"
+                       COMPUTE BZ = 0
+                   ELSE
+                       DISPLAY "Fizz"
+                   END-IF
+                   COMPUTE FZ = 0
+               ELSE
+                   IF BZ = 5 THEN
+                       DISPLAY "Buzz"
+                       COMPUTE BZ = 0
+                   ELSE
+                       DISPLAY CT
+                   END-IF
                 END-IF
                 ADD 1 TO CT
                 ADD 1 TO FZ
                 ADD 1 TO BZ
            END-PERFORM
            STOP RUN.
-
