@@ -1,8 +1,8 @@
-FIZZ-BUZZ:	FIZZ-BUZZ.CBL
-	cobc -x FIZZ-BUZZ.CBL
+fizz-buzz:	fizz-buzz.cbl
+	cobc -x fizz-buzz.cbl
 	
-run:	FIZZ-BUZZ
-	./FIZZ-BUZZ
+run:	fizz-buzz
+	./fizz-buzz
 
 clean:
-	rm -f FIZZ-BUZZ
+	rm -f fizz-buzz
