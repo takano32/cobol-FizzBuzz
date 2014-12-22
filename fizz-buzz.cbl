@@ -3,13 +3,13 @@
 
        DATA DIVISION.
        WORKING-STORAGE SECTION.
-       01 CT           PIC 999 VALUE 1.
-       01 FZ           PIC 999 VALUE 1.
-       01 BZ           PIC 999 VALUE 1.
+       01 CT           PIC 999     VALUE 1.
+       01 FZ           PIC 999     VALUE 1.
+       01 BZ           PIC 999     VALUE 1.
 
        01 FIZZBUZZ.
-           03 FIZZ     PIC X(4) VALUE "Fizz".
-           03 BUZZ     PIC X(4) VALUE "Buzz".
+           03 FIZZ     PIC X(4)    VALUE "Fizz".
+           03 BUZZ     PIC X(4)    VALUE "Buzz".
 
        PROCEDURE DIVISION.
        FIZZ-BUZZ-MAIN SECTION.
@@ -29,7 +29,7 @@
                    ELSE
                        DISPLAY CT
                    END-IF
-                END-IF
-                ADD 1 TO CT FZ BZ
+               END-IF
+               ADD 1 TO CT FZ BZ
            END-PERFORM
            STOP RUN.
